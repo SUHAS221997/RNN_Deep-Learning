@@ -1,0 +1,28 @@
+Seattle Weather Dataset for RNN with LSTM
+
+Dataset Overview:
+
+This dataset provides historical daily weather observations in Seattle, spanning 1,461 days. It is ideal for time-series analysis and machine learning projects such as predicting weather conditions using Recurrent Neural Networks (RNN) with Long Short-Term Memory (LSTM) units.
+
+Data Fields:
+
+date (string): Date of observation in YYYY-MM-DD format.
+precipitation (float): Daily precipitation in millimeters (mm).
+temp_max (float): Maximum daily temperature in degrees Celsius (°C).
+temp_min (float): Minimum daily temperature in degrees Celsius (°C).
+wind (float): Daily average wind speed in meters per second (m/s).
+weather (string): Description of the weather (e.g., "drizzle," "rain").
+
+Model Implementation (RNN-LSTM):
+
+Input: A sequence of historical weather data (e.g., past 7 days).
+Output: Predicted value of a target variable (e.g., temp_max, precipitation).
+Features: Include numerical columns and one-hot encoded weather categories.
+
+Dependencies:
+
+This project may require the following Python libraries:
+
+pandas and numpy for data manipulation.
+matplotlib for visualization.
+tensorflow or keras for RNN-LSTM modeling.
