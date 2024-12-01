@@ -1,0 +1,24 @@
+Apple Share Price Dataset for RNN with LSTM
+
+Dataset Description:
+
+This dataset contains historical stock market data for Apple Inc., spanning 1664 trading days. It is designed for time-series analysis and prediction tasks, such as forecasting stock prices using machine learning models like Recurrent Neural Networks (RNN) with Long Short-Term Memory (LSTM) units.
+
+Columns:
+
+Date (object): The trading date (format: dd-MMM-yy).
+Open (float): Stock price at market open.
+High (float): Highest stock price during the trading day.
+Low (float): Lowest stock price during the trading day.
+Close (float): Stock price at market close.
+Volume (int): Total number of shares traded.
+
+Modeling with RNN-LSTM:
+
+Input: Time-series data prepared using sliding windows (e.g., sequences of 30 days to predict the 31st day's Close price).
+Output: Predicted stock price or another target feature (e.g., Close).
+Features to Include: Start with Close and experiment with additional features (High, Low, Volume) for multivariate analysis.
+
+Dependencies:
+
+Python Libraries: pandas, numpy, matplotlib, tensorflow/keras for RNN-LSTM implementation.
